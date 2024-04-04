@@ -41,9 +41,14 @@ public class MainClass {
         System.out.print("Ingrese el número de columnas de la matriz: ");
         int numCols = scanner.nextInt();
 
+        /**
         ReferenceGenerator generator = new ReferenceGenerator(pageSize, numRows, numCols);
+        **/
+        ReferenciaGenerator generator = new ReferenciaGenerator(pageSize, numRows, numCols);
+        generator.generateReferences();
         String fileName = "referencias.txt";
-        generator.writeReferencesToFile(fileName);
+
+       
 
         System.out.println("Referencias generadas y guardadas en el archivo: " + fileName);
     }
@@ -60,6 +65,10 @@ public class MainClass {
         System.out.println("Resultados de la simulación:");
         System.out.println("Número de fallos de página: " + simulator.getPageFaults());
         System.out.println("Porcentaje de aciertos: " + simulator.getHitPercentage() + "%");
+
+     // Generar el informe
+     ReportGenerator reportGenerator = new ReportGenerator(simulator, "informe.txt");
+     reportGenerator.generateReport();
       
     }
 }

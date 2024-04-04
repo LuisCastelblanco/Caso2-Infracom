@@ -1,0 +1,29 @@
+Informe de Simulación de Memoria Virtual
+----------------------------------------
+
+Algoritmo de Generación de Referencias:
+El algoritmo de generación de referencias se basa en el método de multiplicación de matrices.
+Se genera una referencia por cada elemento de la matriz de datos y el filtro durante el proceso de multiplicación.
+Las referencias incluyen la matriz, la posición, el número de página, el desplazamiento y la acción (lectura o escritura).
+
+Estructuras de Datos Utilizadas:
+- Tabla de Páginas: Mapeo entre números de página y marcos de página.
+- Lista de Marcos de Página: Representa los marcos de página en memoria.
+- Cola de Referencias: Almacena las referencias de página generadas.
+
+Esquema de Sincronización:
+Se utilizaron métodos synchronized en las operaciones críticas de actualización de la tabla de páginas y los marcos de página.
+Esto asegura que solo un hilo pueda acceder y modificar las estructuras de datos compartidas a la vez, evitando condiciones de carrera.
+
+Tabla de Datos Recopilados:
+Tamaño de Página     Frames Asignados     Porcentaje de Aciertos
+4                    1                    0,70                %
+4                    2                    38,06               %
+4                    3                    42,28               %
+4                    4                    50,14               %
+
+Gráficas de Resultados:
+(Incluye aquí las gráficas generadas)
+
+Interpretación de los Resultados:
+(Incluye aquí tu interpretación de los resultados obtenidos)

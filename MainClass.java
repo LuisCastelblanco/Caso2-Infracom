@@ -64,11 +64,8 @@ public class MainClass {
 
         System.out.println("Resultados de la simulación:");
         System.out.println("Número de fallos de página: " + simulator.getPageFaults());
-        System.out.println("Porcentaje de aciertos: " + simulator.getHitPercentage() + "%");
+        System.out.println("Numero de hits: " + simulator.hits());
+        System.out.println("Porcentaje de hits: " + simulator.getHitPercentage() + "%");
 
-     // Generar el informe
-     ReportGenerator reportGenerator = new ReportGenerator(simulator, "informe.txt");
-     reportGenerator.generateReport();
-      
     }
 }

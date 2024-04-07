@@ -17,10 +17,10 @@ Esto asegura que solo un hilo pueda acceder y modificar las estructuras de datos
 
 Tabla de Datos Recopilados:
 Tamaño de Página     Frames Asignados     Porcentaje de Aciertos
-4                    1                    0,70                %
-4                    2                    38,06               %
-4                    3                    42,28               %
-4                    4                    50,14               %
+4                    1                    1,14                %
+4                    2                    22,73               %
+4                    3                    44,32               %
+4                    4                    63,64               %
 
 Gráficas de Resultados:
 (Incluye aquí las gráficas generadas)
